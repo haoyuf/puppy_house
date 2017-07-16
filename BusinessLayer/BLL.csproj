@@ -40,13 +40,13 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Puppies.cs" />
+    <Compile Include="PuppyBLL.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\Model\Model.csproj">
-      <Project>{b22646b0-ab57-45dc-8600-b16bda9eec86}</Project>
-      <Name>Model</Name>
+    <ProjectReference Include="..\DAL\DAL.csproj">
+      <Project>{f1c18f5f-8d03-46ee-9185-0a32d5114786}</Project>
+      <Name>DAL</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

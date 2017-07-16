@@ -204,6 +204,7 @@
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\IdentityModels.cs" />
     <Compile Include="Models\ManageViewModels.cs" />
+    <Compile Include="Models\PuppyVM.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Startup.cs" />
   </ItemGroup>
@@ -298,13 +299,13 @@
     <Content Include="Scripts\jquery-1.10.2.min.map" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\BusinessLayer\BusinessLayer.csproj">
+    <ProjectReference Include="..\BusinessLayer\BLL.csproj">
       <Project>{e19320d3-6e5d-4994-b4a0-d1946988ad35}</Project>
-      <Name>BusinessLayer</Name>
+      <Name>BLL</Name>
     </ProjectReference>
-    <ProjectReference Include="..\Model\Model.csproj">
-      <Project>{b22646b0-ab57-45dc-8600-b16bda9eec86}</Project>
-      <Name>Model</Name>
+    <ProjectReference Include="..\DAL\DAL.csproj">
+      <Project>{f1c18f5f-8d03-46ee-9185-0a32d5114786}</Project>
+      <Name>DAL</Name>
     </ProjectReference>
   </ItemGroup>
   <PropertyGroup>
