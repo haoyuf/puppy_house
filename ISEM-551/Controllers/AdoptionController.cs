@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 using System.Web.Mvc;
+using BusinessLayer;
 
 namespace ISEM_551.Controllers
 {
@@ -11,7 +12,11 @@ namespace ISEM_551.Controllers
         // GET: Adoption
         public ActionResult Index()
         {
-            return View();
+            ViewBag.Message = "Puppies List";
+
+            var puppies = Puppies.getPuppies();
+
+            return View(puppies);
         }
     }
 }
