@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="5e6b9eaa-ae69-4396-8338-e4592142a810" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <GenerateTaskBasedAsynchronousMethod>true</GenerateTaskBasedAsynchronousMethod>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://localhost:56556/PuppyService.svc" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="PuppyService.wsdl" MetadataType="Wsdl" ID="a4b22809-03b2-41f4-b79e-9314ffb38fb9" SourceId="1" SourceUrl="http://localhost:56556/PuppyService.svc?wsdl" />
+    <MetadataFile FileName="PuppyService.xsd" MetadataType="Schema" ID="0173873b-380f-467e-aa50-29e2f4abe5eb" SourceId="1" SourceUrl="http://localhost:56556/PuppyService.svc?xsd=xsd2" />
+    <MetadataFile FileName="PuppyService1.xsd" MetadataType="Schema" ID="cae35dc6-6811-409d-a131-39dc7157e870" SourceId="1" SourceUrl="http://localhost:56556/PuppyService.svc?xsd=xsd1" />
+    <MetadataFile FileName="PuppyService.disco" MetadataType="Disco" ID="e0a961df-d951-447e-af7b-49634880c6f5" SourceId="1" SourceUrl="http://localhost:56556/PuppyService.svc?disco" />
+    <MetadataFile FileName="PuppyService2.xsd" MetadataType="Schema" ID="0b0a89a2-d5dd-4d66-8336-a2750b805361" SourceId="1" SourceUrl="http://localhost:56556/PuppyService.svc?xsd=xsd0" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>
