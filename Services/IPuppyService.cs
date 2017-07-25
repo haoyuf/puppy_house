@@ -5,7 +5,8 @@ using System.Runtime.Serialization;
 using System.ServiceModel;
 using System.ServiceModel.Web;
 using System.Text;
-using DAL.Model;
+using DTO;
+using BLL;
 
 namespace Services
 {
@@ -14,16 +15,16 @@ namespace Services
     {
 
         [OperationContract]
-        void addNewPuppy(Puppy newPuppyInfo);
+        void addNewPuppy(PuppyDTO newPuppyInfo);
 
         [OperationContract]
-        List<Puppy> getPuppyByGender(string gender);
+        List<PuppyDTO> getPuppyByGender(string gender);
 
         [OperationContract]
-        List<Puppy> getAllPuppies();
+        List<PuppyDTO> getAllPuppies();
 
         [OperationContract]
-        void updatePuppy(Puppy updatedPuppy);
+        void updatePuppy(PuppyDTO updatedPuppy);
 
         [OperationContract]
         void deletePuppy(int puppyId);

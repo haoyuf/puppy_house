@@ -5,9 +5,9 @@ using System.Text;
 using System.Threading.Tasks;
 using DAL.Model;
 using DAL.Repository;
-using BLL1.DTO;
+using DTO;
 
-namespace BLL1
+namespace BLL
 {
     public class PuppyBLL
     {
@@ -24,6 +24,7 @@ namespace BLL1
                 PuppyDTO onePuppyDTO = new PuppyDTO()
                 {
                     Id = onePuppy.Id,
+                    Name = onePuppy.Name,
                     Gender = onePuppy.Gender,
                     Breed = onePuppy.Breed,
                     Color = onePuppy.Color,
@@ -40,7 +41,7 @@ namespace BLL1
 
         public int getPuppyDaysSinceBirth(Puppy onePuppy)
         {
-            //this is a calculation and all these kind of methods should be 
+            //this is a calculation and all heavy methods should be 
             //placed in the business layer
             return 120;
         }

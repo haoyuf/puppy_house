@@ -4,6 +4,8 @@
     ViewBag.Title = "Puppies List";
 }
 
+<h2> @ViewBag.welcomeMessage </h2>
+
 <h3>Puppies Available for Adoption</h3>
 
 
@@ -23,9 +25,6 @@
         </th>
         <th>
             @Html.DisplayNameFor(model => model.Weight)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.Address)
         </th>
         <th>
             @Html.DisplayNameFor(model => model.OwnerName)
@@ -53,9 +52,6 @@
             </td>
             <td>
                 @Html.DisplayFor(modelItem => item.Weight)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Address)
             </td>
             <td>
                 @Html.DisplayFor(modelItem => item.OwnerName)

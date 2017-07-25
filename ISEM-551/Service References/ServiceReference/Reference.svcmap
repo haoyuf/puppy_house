@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="5e6b9eaa-ae69-4396-8338-e4592142a810" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="2257875b-5a62-4859-8521-a53ad220a17b" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
   <ClientOptions>
     <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
     <GenerateTaskBasedAsynchronousMethod>true</GenerateTaskBasedAsynchronousMethod>
@@ -22,11 +22,11 @@
     <MetadataSource Address="http://localhost:56556/PuppyService.svc" Protocol="http" SourceId="1" />
   </MetadataSources>
   <Metadata>
-    <MetadataFile FileName="PuppyService.wsdl" MetadataType="Wsdl" ID="a4b22809-03b2-41f4-b79e-9314ffb38fb9" SourceId="1" SourceUrl="http://localhost:56556/PuppyService.svc?wsdl" />
-    <MetadataFile FileName="PuppyService.xsd" MetadataType="Schema" ID="0173873b-380f-467e-aa50-29e2f4abe5eb" SourceId="1" SourceUrl="http://localhost:56556/PuppyService.svc?xsd=xsd2" />
-    <MetadataFile FileName="PuppyService1.xsd" MetadataType="Schema" ID="cae35dc6-6811-409d-a131-39dc7157e870" SourceId="1" SourceUrl="http://localhost:56556/PuppyService.svc?xsd=xsd1" />
-    <MetadataFile FileName="PuppyService.disco" MetadataType="Disco" ID="e0a961df-d951-447e-af7b-49634880c6f5" SourceId="1" SourceUrl="http://localhost:56556/PuppyService.svc?disco" />
-    <MetadataFile FileName="PuppyService2.xsd" MetadataType="Schema" ID="0b0a89a2-d5dd-4d66-8336-a2750b805361" SourceId="1" SourceUrl="http://localhost:56556/PuppyService.svc?xsd=xsd0" />
+    <MetadataFile FileName="PuppyService.wsdl" MetadataType="Wsdl" ID="2827eeac-881c-4602-a5a9-e8b8e340547a" SourceId="1" SourceUrl="http://localhost:56556/PuppyService.svc?wsdl" />
+    <MetadataFile FileName="PuppyService.xsd" MetadataType="Schema" ID="82505098-7e57-4559-ae63-fc745258ee5c" SourceId="1" SourceUrl="http://localhost:56556/PuppyService.svc?xsd=xsd2" />
+    <MetadataFile FileName="PuppyService1.xsd" MetadataType="Schema" ID="02cc824c-719d-467a-b6dd-a0820435d7a3" SourceId="1" SourceUrl="http://localhost:56556/PuppyService.svc?xsd=xsd1" />
+    <MetadataFile FileName="PuppyService.disco" MetadataType="Disco" ID="a8949f1c-f647-42ab-a6cf-07baf1530f45" SourceId="1" SourceUrl="http://localhost:56556/PuppyService.svc?disco" />
+    <MetadataFile FileName="PuppyService2.xsd" MetadataType="Schema" ID="b2e1cbd5-e7d0-46d9-a18e-58f96c718991" SourceId="1" SourceUrl="http://localhost:56556/PuppyService.svc?xsd=xsd0" />
   </Metadata>
   <Extensions>
     <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />

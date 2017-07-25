@@ -3,9 +3,9 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 using System.Web.Mvc;
-using BLL;
+using DTO;
 using ISEM_551.Models;
-using DAL.Model;
+using ISEM_551.ServiceReference;
 
 namespace ISEM_551.Controllers
 {
@@ -15,15 +15,16 @@ namespace ISEM_551.Controllers
         public ActionResult Index()
         {
             ViewBag.Message = "Puppies List";
-            PuppyBLL tempBLL = new PuppyBLL();
-            var puppies = tempBLL.getAllPuppies();
+
+            PuppyServiceClient puppyService = new PuppyServiceClient();
+            var puppies = puppyService.getAllPuppies().ToList();
             List<PuppyVM> puppyvms = populateToVM(puppies);
 
             return View(puppyvms);
         }
 
 
-        private List<PuppyVM> populateToVM(List<Puppy> puppies)
+        private List<PuppyVM> populateToVM(List<PuppyDTO> puppies)
         {
             List<PuppyVM> result = new List<PuppyVM>();
 
@@ -43,6 +44,8 @@ namespace ISEM_551.Controllers
                 };
                 result.Add(puppyVM);
             }
+
+            ViewBag.welcomeMessage = "Welcome to the Puppy House Adoption";
             return result;
         }
 

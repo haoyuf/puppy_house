@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace BusinessLayer.ServiceReference {
+namespace ISEM_551.ServiceReference {
     
     
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
@@ -16,28 +16,28 @@ namespace BusinessLayer.ServiceReference {
     public interface IPuppyService {
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IPuppyService/addNewPuppy", ReplyAction="http://tempuri.org/IPuppyService/addNewPuppyResponse")]
-        void addNewPuppy(DAL.Model.Puppy newPuppyInfo);
+        void addNewPuppy(DTO.PuppyDTO newPuppyInfo);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IPuppyService/addNewPuppy", ReplyAction="http://tempuri.org/IPuppyService/addNewPuppyResponse")]
-        System.Threading.Tasks.Task addNewPuppyAsync(DAL.Model.Puppy newPuppyInfo);
+        System.Threading.Tasks.Task addNewPuppyAsync(DTO.PuppyDTO newPuppyInfo);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IPuppyService/getPuppyByGender", ReplyAction="http://tempuri.org/IPuppyService/getPuppyByGenderResponse")]
-        DAL.Model.Puppy[] getPuppyByGender(string gender);
+        DTO.PuppyDTO[] getPuppyByGender(string gender);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IPuppyService/getPuppyByGender", ReplyAction="http://tempuri.org/IPuppyService/getPuppyByGenderResponse")]
-        System.Threading.Tasks.Task<DAL.Model.Puppy[]> getPuppyByGenderAsync(string gender);
+        System.Threading.Tasks.Task<DTO.PuppyDTO[]> getPuppyByGenderAsync(string gender);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IPuppyService/getAllPuppies", ReplyAction="http://tempuri.org/IPuppyService/getAllPuppiesResponse")]
-        DAL.Model.Puppy[] getAllPuppies();
+        DTO.PuppyDTO[] getAllPuppies();
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IPuppyService/getAllPuppies", ReplyAction="http://tempuri.org/IPuppyService/getAllPuppiesResponse")]
-        System.Threading.Tasks.Task<DAL.Model.Puppy[]> getAllPuppiesAsync();
+        System.Threading.Tasks.Task<DTO.PuppyDTO[]> getAllPuppiesAsync();
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IPuppyService/updatePuppy", ReplyAction="http://tempuri.org/IPuppyService/updatePuppyResponse")]
-        void updatePuppy(DAL.Model.Puppy updatedPuppy);
+        void updatePuppy(DTO.PuppyDTO updatedPuppy);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IPuppyService/updatePuppy", ReplyAction="http://tempuri.org/IPuppyService/updatePuppyResponse")]
-        System.Threading.Tasks.Task updatePuppyAsync(DAL.Model.Puppy updatedPuppy);
+        System.Threading.Tasks.Task updatePuppyAsync(DTO.PuppyDTO updatedPuppy);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IPuppyService/deletePuppy", ReplyAction="http://tempuri.org/IPuppyService/deletePuppyResponse")]
         void deletePuppy(int puppyId);
@@ -47,12 +47,12 @@ namespace BusinessLayer.ServiceReference {
     }
     
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    public interface IPuppyServiceChannel : BusinessLayer.ServiceReference.IPuppyService, System.ServiceModel.IClientChannel {
+    public interface IPuppyServiceChannel : ISEM_551.ServiceReference.IPuppyService, System.ServiceModel.IClientChannel {
     }
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    public partial class PuppyServiceClient : System.ServiceModel.ClientBase<BusinessLayer.ServiceReference.IPuppyService>, BusinessLayer.ServiceReference.IPuppyService {
+    public partial class PuppyServiceClient : System.ServiceModel.ClientBase<ISEM_551.ServiceReference.IPuppyService>, ISEM_551.ServiceReference.IPuppyService {
         
         public PuppyServiceClient() {
         }
@@ -73,35 +73,35 @@ namespace BusinessLayer.ServiceReference {
                 base(binding, remoteAddress) {
         }
         
-        public void addNewPuppy(DAL.Model.Puppy newPuppyInfo) {
+        public void addNewPuppy(DTO.PuppyDTO newPuppyInfo) {
             base.Channel.addNewPuppy(newPuppyInfo);
         }
         
-        public System.Threading.Tasks.Task addNewPuppyAsync(DAL.Model.Puppy newPuppyInfo) {
+        public System.Threading.Tasks.Task addNewPuppyAsync(DTO.PuppyDTO newPuppyInfo) {
             return base.Channel.addNewPuppyAsync(newPuppyInfo);
         }
         
-        public DAL.Model.Puppy[] getPuppyByGender(string gender) {
+        public DTO.PuppyDTO[] getPuppyByGender(string gender) {
             return base.Channel.getPuppyByGender(gender);
         }
         
-        public System.Threading.Tasks.Task<DAL.Model.Puppy[]> getPuppyByGenderAsync(string gender) {
+        public System.Threading.Tasks.Task<DTO.PuppyDTO[]> getPuppyByGenderAsync(string gender) {
             return base.Channel.getPuppyByGenderAsync(gender);
         }
         
-        public DAL.Model.Puppy[] getAllPuppies() {
+        public DTO.PuppyDTO[] getAllPuppies() {
             return base.Channel.getAllPuppies();
         }
         
-        public System.Threading.Tasks.Task<DAL.Model.Puppy[]> getAllPuppiesAsync() {
+        public System.Threading.Tasks.Task<DTO.PuppyDTO[]> getAllPuppiesAsync() {
             return base.Channel.getAllPuppiesAsync();
         }
         
-        public void updatePuppy(DAL.Model.Puppy updatedPuppy) {
+        public void updatePuppy(DTO.PuppyDTO updatedPuppy) {
             base.Channel.updatePuppy(updatedPuppy);
         }
         
-        public System.Threading.Tasks.Task updatePuppyAsync(DAL.Model.Puppy updatedPuppy) {
+        public System.Threading.Tasks.Task updatePuppyAsync(DTO.PuppyDTO updatedPuppy) {
             return base.Channel.updatePuppyAsync(updatedPuppy);
         }
         

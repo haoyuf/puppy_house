@@ -5,8 +5,8 @@ using System.Runtime.Serialization;
 using System.ServiceModel;
 using System.ServiceModel.Web;
 using System.Text;
-using DAL.Model;
-using DAL.Repository;
+using DTO;
+using BLL;
 
 namespace Services
 {
@@ -14,9 +14,8 @@ namespace Services
     // NOTE: In order to launch WCF Test Client for testing this service, please select PuppyService.svc or PuppyService.svc.cs at the Solution Explorer and start debugging.
     public class PuppyService : IPuppyService
     {
-        private IPuppy puppyRepo = new PuppyImpl();
-
-        public void addNewPuppy(Puppy newPuppyInfo)
+        
+        public void addNewPuppy(PuppyDTO newPuppyInfo)
         {
             throw new NotImplementedException();
         }
@@ -26,17 +25,19 @@ namespace Services
             throw new NotImplementedException();
         }
 
-        public List<Puppy> getAllPuppies()
+        public List<PuppyDTO> getAllPuppies()
         {
-            return puppyRepo.getAllPuppies();
+            PuppyBLL bll = new PuppyBLL();
+            return bll.getAllPuppies();
         }
 
-        public List<Puppy> getPuppyByGender(string gender)
+        public List<PuppyDTO> getPuppyByGender(string gender)
         {
             throw new NotImplementedException();
         }
 
-        public void updatePuppy(Puppy updatedPuppy)
+
+        public void updatePuppy(PuppyDTO updatedPuppy)
         {
             throw new NotImplementedException();
         }
